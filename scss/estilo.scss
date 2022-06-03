@@ -1,0 +1,158 @@
+*{margin: 0%;padding: 0%;box-sizing: border-box;}
+body {
+    min-height: 100%;
+}
+
+
+
+.contenedorGeneral {
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "barraNav barraNav"
+    "imagenF imagenF"
+    "secciones secciones"
+    "footer footer"
+    ;
+
+}
+
+
+
+.contenedorGeneral {
+    grid-area: contenedorGeneral;
+    background-color: black;
+}
+
+.barraNav{
+    display: flex;
+    grid-area: barraNav;
+    color: blue ;
+}
+
+
+.contenedor2{
+    display: flex;
+    grid-area: contenedor2;
+    color: firebrick;
+}
+
+.imagenF{
+    width: 50%;
+    grid-area: imagenF;
+    color: green;
+}
+
+.secciones{
+    width: 50%;
+    grid-area: secciones;
+    color: gray;
+}
+
+.footer{
+    grid-area: footer;
+    color:whitesmoke ;
+}
+.iconos {
+    display: flex;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contenedorGeneral {
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-template-areas: 
+        "barraNav barraNav"
+        "imagenF imagenF"
+        "imagenF imagenF"
+        "secciones secciones"
+        "secciones secciones"
+        "secciones secciones"
+        "secciones secciones"
+        "footer footer"
+        ;
+    }
+}
+
+
+    
+
+
+   /*Efectos imagenes y logos de footer*/
+
+   .disc:hover {filter: blur(5px);}
+   .gira:hover {filter: blur(5px);}
+   .vid:hover {filter: blur(5px);}
+   .cont:hover {filter: blur(5px);}
+   .fb:hover {filter: blur(5px);}
+   .it:hover {filter: blur(5px);}
+   .yt:hover {filter: blur(5px);}
+
+
+
+    .disc, .vid, .cont, .gira{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .texto-encima{
+    
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
+  /*Discografia*/
+
+.discografiaPage {
+    grid-area: contenedorGeneral;
+    background-color: black;
+}
+
+
+.barraNav{
+    grid-area: footer;
+   ;
+}
+
+
+.discografia{
+    grid-area: discografia;
+   ;
+}
+
+ 
+
+
+.h2{
+    grid-area: h2;
+   ;
+}
+
+
+
+.h3{
+    grid-area: h3;
+   ;
+}
+    
+
+.discogMasVideo{
+    grid-area: discogMasVideo;
+   ;
+}
+   
+
+.footer{
+    grid-area: footer;
+   ;
+}
+
